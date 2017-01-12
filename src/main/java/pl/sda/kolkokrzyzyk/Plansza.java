@@ -6,11 +6,14 @@ public class Plansza {
 
 	public Plansza() {
 		pola = new String[9];
+		for (int i = 1; i <= pola.length; i++) {
+			pola[i - 1] = String.valueOf(i);
+		}
 	}
 
 	public boolean wstawZnak(String znak, int pozycja) {
 
-		if (pola[pozycja - 1] != null) {
+		if (!Util.isDigit(pola[pozycja - 1])) {
 			return false;
 		}
 		pola[pozycja - 1] = znak;
@@ -27,8 +30,8 @@ public class Plansza {
 				stringBuilder.append("-----");
 				stringBuilder.append("\n");
 			}
-			if (pola[i] == null) {
-				stringBuilder.append(" ");
+			if (Util.isDigit(pola[i])) {
+				stringBuilder.append(i + 1);
 
 			} else {
 				stringBuilder.append(pola[i]);
@@ -37,6 +40,14 @@ public class Plansza {
 			stringBuilder.append("|");
 		}
 		return stringBuilder.toString();
+	}
+
+	public String[] getPola() {
+		return pola;
+	}
+
+	public void setPola(String[] pola) {
+		this.pola = pola;
 	}
 
 }
