@@ -32,15 +32,4 @@ public class Interfejs {
 		return pozycja;
 
 	}
-
-	public void pokazPlansze(Plansza plansza) {
-		System.out.println(plansza.toString());
-	}
-
-	public void podanoNiepoprawnePole() {
-		System.out.println("Podano niepoprawne pole");
-		Scanner scanner = new Scanner(System.in);
-		scanner.nextLine();
-	}
-
 }
