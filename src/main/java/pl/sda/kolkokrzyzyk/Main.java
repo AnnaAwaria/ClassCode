@@ -39,9 +39,13 @@ public class Main {
 				}
 
 			} while (!czyWstawiono);
+			if (Util.czyZakonczonoGre(plansza)) {
+				interfejs.pokazPlansze(plansza);
+				interfejs.wygranoGre(aktualnyGracz);
+				break;
+			}
 
 		}
-		interfejs.pokazPlansze(plansza);
 
 		/*
 		 * System.out.println(" |  | "); System.out.println(" ----- ");

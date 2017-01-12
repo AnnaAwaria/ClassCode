@@ -42,4 +42,12 @@ public class Plansza {
 		return stringBuilder.toString();
 	}
 
+	public String[] getPola() {
+		return pola;
+	}
+
+	public void setPola(String[] pola) {
+		this.pola = pola;
+	}
+
 }

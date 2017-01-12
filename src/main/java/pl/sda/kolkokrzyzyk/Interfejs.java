@@ -43,4 +43,10 @@ public class Interfejs {
 		scanner.nextLine();
 	}
 
+	public void wygranoGre(String imie) {
+		System.out.println("Brawo " + imie + "! Wygrales gre");
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextLine();
+	}
+
 }
