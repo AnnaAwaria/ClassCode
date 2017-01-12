@@ -1,8 +1,5 @@
 package pl.sda.kolkokrzyzyk;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,8 +7,6 @@ public class Main {
 		Interfejs interfejs = new Interfejs();
 		Plansza plansza = new Plansza();
 		int menu = interfejs.menu();
-
-		Map<String, String> mapaGraczy = new HashMap<>();
 		String gracz1 = interfejs.podajImie();
 		String gracz2 = interfejs.podajImie();
 		mapaGraczy.put(gracz1, "X");
@@ -47,11 +42,11 @@ public class Main {
 
 		}
 
-		/*
-		 * System.out.println(" |  | "); System.out.println(" ----- ");
-		 * System.out.println(" |  | "); System.out.println(" ----- ");
-		 * System.out.println(" |  | ");
-		 */
+		System.out.println(" |  | ");
+		System.out.println(" ----- ");
+		System.out.println(" |  | ");
+		System.out.println(" ----- ");
+		System.out.println(" |  | ");
 
 	}
 

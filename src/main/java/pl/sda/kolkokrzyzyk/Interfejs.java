@@ -32,7 +32,6 @@ public class Interfejs {
 		return pozycja;
 
 	}
-
 	public void pokazPlansze(Plansza plansza) {
 		System.out.println(plansza.toString());
 	}
@@ -48,5 +47,4 @@ public class Interfejs {
 		Scanner scanner = new Scanner(System.in);
 		scanner.nextLine();
 	}
-
 }
